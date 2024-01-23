@@ -1,0 +1,177 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\vspace*{-40pt}  
+
+%==== Personal Information ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Your Name}}\\
+    \vspace{2mm}
+	City, State $\cdot$ email@email.com $\cdot$ 123-456-7890 $\cdot$ https://linkedin.com/in/\\
+\end{center}
+
+%==== Summary ====%
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nunc aliquam ultrices aliquet. Cras ac placerat ex, non rhoncus tortor. 
+Phasellus accumsan sit amet felis vitae varius. Nullam efficitur lorem nec
+orci scelerisque, commodo rutrum arcu varius. Nullam orci metus, 
+rutrum sit amet enim sit amet, luctus rutrum metus. Vivamus commodo, 
+quam a euismod venenatis, felis lorem porta massa, ac cursus massa nibh 
+eu lectus. Duis pretium in elit nec sodales. Vivamus consectetur tristique 
+ante eget ultricies. Cras sed lectus luctus, commodo urna fringilla, placerat urna.
+
+\vspace{2mm}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+    Skill:           & Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\
+\end{tabular}
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Professional Experience}
+\vspace{1mm}
+
+\textbf{Workplace} \hfill https://workplace.website.com $\cdot$ City, State\\
+\textit{Position Name} \hfill Jan 2010 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc aliquam ultrices aliquet. Cras ac placerat ex, non rhoncus tortor.
+    \item Phasellus accumsan sit amet felis vitae varius. Nullam efficitur lorem nec
+    orci scelerisque, commodo rutrum arcu varius. Nullam orci metus,
+    \item rutrum sit amet enim sit amet, luctus rutrum metus. Vivamus commodo, 
+    quam a euismod venenatis, felis lorem porta massa, ac cursus massa nibh 
+\end{itemize}
+
+\textbf{Workplace} \hfill https://workplace.website.com $\cdot$ City, State\\
+\textit{Position Name} \hfill Jan 2006 - May 2009\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc aliquam ultrices aliquet. Cras ac placerat ex, non rhoncus tortor.
+    \item Phasellus accumsan sit amet felis vitae varius. Nullam efficitur lorem nec
+    orci scelerisque, commodo rutrum arcu varius. Nullam orci metus,
+    \item rutrum sit amet enim sit amet, luctus rutrum metus. Vivamus commodo, 
+    quam a euismod venenatis, felis lorem porta massa, ac cursus massa nibh 
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\vspace{1mm}
+\textbf{School Name}\hfill City, State\\
+BS - Your Major - \textit{GPA: X.X} \hfill Aug 20XX - May 20XX\\
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ultrices aliquet. 
+Cras ac placerat ex, non rhoncus tortor. Phasellus accumsan sit amet felis vitae varius. 
+Nullam efficitur lorem necorci scelerisque, commodo rutrum arcu varius. Nullam orci metus,
+rutrum sit amet enim sit amet, luctus rutrum metus. Vivamus commodo, 
+quam a euismod venenatis, felis lorem porta massa, ac cursus massa nibh 
+\vspace{2mm}
+
+%==== Volunteer Experience ====%
+\header{Volunteering}
+\vspace{1mm}
+{\textbf{Item 1}} - Nov 20XX to Oct 20XX\hfill Name of Organization \\
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ultrices aliquet. 
+Cras ac placerat ex, non rhoncus tortor. Phasellus accumsan sit amet felis vitae varius. 
+Nullam efficitur lorem necorci scelerisque, commodo rutrum arcu varius. Nullam orci metus,\\
+\vspace*{2mm}
+{\textbf{Item 1}} - Nov 20XX to Oct 20XX\hfill Name of Organization \\
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ultrices aliquet. 
+Cras ac placerat ex, non rhoncus tortor. Phasellus accumsan sit amet felis vitae varius. 
+Nullam efficitur lorem necorci scelerisque, commodo rutrum arcu varius. Nullam orci metus,\\
+\vspace*{2mm}
+{\textbf{Item 1}} - Nov 20XX to Oct 20XX\hfill Name of Organization \\
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ultrices aliquet. 
+Cras ac placerat ex, non rhoncus tortor. Phasellus accumsan sit amet felis vitae varius. 
+Nullam efficitur lorem necorci scelerisque, commodo rutrum arcu varius. Nullam orci metus,\\
+\vspace*{2mm}
+
+%==== Languages ====%
+\header{Languages}
+\vspace{1mm}
+{\textbf{Language Name}} - Proficiency\\
+\vspace*{2mm}
+
+%==== References ====%
+\vspace*{2mm}
+References available upon request.
+
+\end{document}

@@ -1,0 +1,7 @@
+my_resume
+*.aux
+*.fls
+*.log
+*.synctex.gz
+*.fdb_latexmk
+.vscode
